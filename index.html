@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="http://www.vam.ac.uk/_designs/new-squiz/css/main.css" media="all">
+    <script type='text/javascript' src='http://code.jquery.com/jquery-2.1.1.min.js'></script>
+    <script type='text/javascript' src='recent_tumblr.js'></script>
+    <style>
+        #recent-posts span{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+    </h1>
+    <div id="recent-posts"></div>
+</body>
+<script type='text/javascript'>
+    $(function() { new Tumblr.RecentPosts($("#recent-posts")).render() })
+</script>
+</html>
